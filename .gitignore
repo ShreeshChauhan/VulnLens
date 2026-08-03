@@ -1,22 +1,5 @@
-# Ignore Joern installer and archives
-joern-cli.zip
-joern-install.sh
-joern-cli/
-.joern/
-
-# Ignore Python cached files & environment
-__pycache__/
-*.pyc
-.venv/
-env/
-
-# Ignore heavy ML model files/weights (if big)
+workspace/
+*.zip
+*.tar.gz
+joern-cli-*/
 *.bin
-*.pt
-*.pth
-*.h5
-
-# Ignore Node dependencies (for your VS Code extension)
-node_modules/
-dist/
-out/

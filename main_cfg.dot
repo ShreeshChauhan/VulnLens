@@ -1,0 +1,20 @@
+digraph "main" {  
+node [shape="rect"];  
+"141733920768" [label = <RETURN, 17<BR/>return 0;> ]
+"30064771076" [label = <&lt;operator&gt;.greaterThan, 12<BR/>argc &gt; 1> ]
+"30064771077" [label = <process_input, 13<BR/>process_input(argv[1])> ]
+"30064771078" [label = <&lt;operator&gt;.indirectIndexAccess, 13<BR/>argv[1]> ]
+"30064771079" [label = <printf, 15<BR/>printf(&quot;Usage: %s &lt;input_string&gt;\n&quot;, argv[0])> ]
+"30064771080" [label = <&lt;operator&gt;.indirectIndexAccess, 15<BR/>argv[0]> ]
+"107374182402" [label = <METHOD, 11<BR/>main> ]
+"124554051585" [label = <METHOD_RETURN, 11<BR/>int> ]
+  "141733920768" -> "124554051585" 
+  "30064771076" -> "30064771078" 
+  "30064771076" -> "30064771080" 
+  "30064771077" -> "141733920768" 
+  "30064771078" -> "30064771077" 
+  "30064771079" -> "141733920768" 
+  "30064771080" -> "30064771079" 
+  "107374182402" -> "30064771076" 
+}
+
